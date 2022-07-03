@@ -8,15 +8,125 @@
             href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@600;700&family=Ubuntu:wght@700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
         <script type='text/javascript' src='words.js'></script>
         <title>Wordle</title>
+        <style>
+            .heading {
+                font-family: "Roboto Slab", serif;
+            }
+
+            .nav__icon {
+                width: 2rem;
+            }
+            .navbar {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                justify-content: space-between;
+                padding: 0 3rem;
+            }
+            .navele {
+                margin: 0;
+            }
+            .infoCard {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 15px;
+                text-align: left;
+                width: 20rem;
+                margin: 0 auto;
+                padding: 20px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                position: absolute;
+                background-color: white;
+            }
+            .hidden{
+                display: none;
+            }
+            .example__img{
+                width: 20rem;
+            }
+            .words {
+                margin: auto;
+                padding: 10px;
+            }
+            .inputBox {
+                width: 50px;
+                height: 50px;
+                caret-color: transparent;
+                font-size: 25px;
+                font-weight: bold;
+                text-align: center;
+                border: solid 2px rgb(182, 182, 182);
+            }
+            .button {
+                width: 40px;
+                height: 60px;
+                padding: 10px;
+                margin: 2px;
+                border-style: none;
+                border-radius: 5px;
+                background-color: rgb(221, 220, 220);
+                font-weight: bold;
+            }
+            .button:hover {
+                background-color: rgb(207, 205, 205);
+            }
+            .keyboard {
+                margin: auto;
+            }
+
+            .buttonRow2 {
+                margin: auto;
+            }
+            .enter {
+                width: 80px;
+            }
+            .backspace {
+                width: 50px;
+                font-size: 18px;
+            }
+            .message {
+                position: absolute;
+                /* left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%); */
+                text-align: center;
+                background-color: black;
+                color: white;
+                font-size: 20px;
+                border-radius: 10px;
+                padding: 9px 12px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .cross {
+                font-weight: 900;
+                border: none;
+                background-color: white;
+            }
+            .yellow {
+                background-color: rgb(205, 226, 16);
+                border-color: rgb(205, 226, 16);
+                color: white;
+            }
+            .green {
+                background-color: rgb(21, 172, 89);
+                border-color: rgb(21, 172, 89);
+                color: white;
+            }
+            .grey {
+                background-color: rgb(161, 161, 161);
+                border-color: rgb(161, 161, 161);
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <ul class='navbar'>
-            <li><img class='info navele' src="img/information.png" alt=""></li>
+            <li><img class='info navele nav__icon' src="img/information.png" alt=""></li>
             <li><h1 class="heading navele">Wordle</h1></li>
-            <li><img class='stats navele' src="img/statistics.png" alt=""></li>
+            <li><img class='stats navele nav__icon' src="img/statistics.png" alt=""></li>
         </ul>
         
         <hr />
@@ -30,7 +140,7 @@
             <p>After each guess, the color of the tiles will change to show how close your guess was to the word.</p>
             <hr>
             <p><strong>Examples</strong></p>
-            <img id='eximg' src="img/rules.png" alt="">
+            <img class='example__img' src="img/rules.png" alt="">
             <p>The letter <strong>A</strong> is in the word and in the correct spot.</p>
             <p>The letters <strong>L</strong> and <strong>E</strong> are in the word but are not in the correct spot.</p>
             <p>The letter <strong>F</strong> and <strong>E</strong> are not in the word.</p>
