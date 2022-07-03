@@ -1,0 +1,93 @@
+.heading {
+    font-family: "Roboto Slab", serif;
+}
+.message {
+    position: absolute;
+    left: 44%;
+    top: 18%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 9px 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.words {
+    margin: auto;
+    padding: 10px;
+}
+.inputBox {
+    width: 50px;
+    height: 50px;
+    caret-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: solid 2px rgb(182, 182, 182);
+}
+.keyboard {
+    margin: auto;
+}
+.button {
+    width: 40px;
+    height: 60px;
+    padding: 10px;
+    margin: 2px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(221, 220, 220);
+    font-weight: bold;
+}
+.button:hover {
+    background-color: rgb(207, 205, 205);
+}
+.buttonRow2 {
+    margin: auto;
+}
+.enter {
+    width: 80px;
+}
+.backspace {
+    width: 50px;
+    font-size: 18px;
+}
+
+.yellow {
+    background-color: rgb(205, 226, 16);
+    border-color: rgb(205, 226, 16);
+    color: white;
+}
+.green {
+    background-color: rgb(21, 172, 89);
+    border-color: rgb(21, 172, 89);
+    color: white;
+}
+.grey {
+    background-color: rgb(161, 161, 161);
+    border-color: rgb(161, 161, 161);
+    color: white;
+}
+.hidden {
+    display: none;
+}
+
+.info {
+    padding-left: 0px;
+    padding-right: 30em;
+    width: 30px;
+}
+.stats {
+    padding-left: 30rem;
+    padding-right: 0px;
+    width: 30px;
+}
+.navbar {
+    text-align: center;
+}
+.navbar li {
+    display: inline-block;
+}
+.navele {
+    display: block;
+}
