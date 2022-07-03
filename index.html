@@ -121,15 +121,45 @@
                 color: white;
             }
             @media screen and (max-width: 568px) {
+                .heading {
+                    font-family: "Roboto Slab", serif;
+                    font-size: 1.5rem;
+                }
+                .popup{
+                    width: 20rem;
+                    left: 20%;
+                }
+                .infoCard {
+                    font-size: 12px;
+                    margin: 0 auto;
+                    padding: 15px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    position: absolute;
+                    background-color: white;
+                }
+                .example__img{
+                    width: 18rem;
+                }
+                .nav__icon {
+                    width: 1.5rem;
+                }
                 .button {
                     width: 28px;
                     height: 42px;
                     padding: 3px;
                     margin: 1px;
+                    font-weight:550;
+                }
+                .enter {
+                    width: 55px;
+                }
+                .backspace {
+                    width: 40px;
+                    font-size: 18px;
                 }
                 .inputBox {
-                    width: 40px;
-                    height: 40px;
+                    width: 35px;
+                    height: 35px;
                     font-size: 20px;  
                 }
                 .navbar {
@@ -146,10 +176,10 @@
         </ul>
         
         <hr />
-        <div class='message hidden' id='message'>
+        <div class='message hidden popup' id='message'>
             <p>This is message</p>
         </div>
-        <div class='infoCard hidden' id="rules">
+        <div class='rules infoCard popup' id="rules">
             <p class='crossOuter'><button class='cross' id='closeInfo'>&#9587</button></p>
             <p>Guess the <strong>WORDLE</strong> in six tries.</p>
             <p>Each guess must be a valid five-letter word. Hit the enter button to submit.</p>
@@ -163,14 +193,14 @@
             <hr>
             <p><strong>A new WORDLE will be available each day!</strong></p>
         </div>
-        <div class='infoCard hidden' id="stats">
+        <div class='infoCard hidden popup' id="stats">
             <p class='crossOuter'><button class='cross' id='closeStats'>&#9587</button></p>
             <p><strong>STATISTICS</strong></p>
             <p>0 &emsp;&emsp;0 &emsp;&emsp;0 &emsp;&emsp;0</p>
             <p class='mini'>Played - Win% - Current Streak - Max Streak</p>
             
         </div>
-        <div class='infoCard hidden' id="result">
+        <div class='infoCard hidden popup' id="result">
             <p class='crossOuter'><button class='cross' id='closeResult'>&#9587</button></p>
             <p><strong>RESULT</strong></p>
             <p>1 &emsp;&emsp;100 &emsp;&emsp;1 &emsp;&emsp;1</p>
