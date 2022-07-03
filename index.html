@@ -34,11 +34,12 @@
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 15px;
                 text-align: left;
-                width: 20rem;
+                width: 30rem;
                 margin: 0 auto;
                 padding: 20px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 position: absolute;
+                left: 33%;
                 background-color: white;
             }
             .hidden{
@@ -89,9 +90,9 @@
             }
             .message {
                 position: absolute;
-                /* left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%); */
+                left: 50%;
+                top: 20%;
+                transform: translate(-50%, -50%);
                 text-align: center;
                 background-color: black;
                 color: white;
@@ -120,6 +121,7 @@
                 border-color: rgb(161, 161, 161);
                 color: white;
             }
+            
             @media screen and (max-width: 568px) {
                 .heading {
                     font-family: "Roboto Slab", serif;
@@ -179,7 +181,7 @@
         <div class='message hidden popup' id='message'>
             <p>This is message</p>
         </div>
-        <div class='hidden infoCard popup' id="rules">
+        <div class='infoCard popup' id="rules">
             <p class='crossOuter'><button class='cross' id='closeInfo'>&#9587</button></p>
             <p>Guess the <strong>WORDLE</strong> in six tries.</p>
             <p>Each guess must be a valid five-letter word. Hit the enter button to submit.</p>
