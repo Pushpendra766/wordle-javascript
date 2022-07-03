@@ -23,4 +23,4 @@ Briefly explaining, we have to guess a 5 letter word and in order for us to do t
 5. Make changes in the code.
 6. Make a PR.
 
-### Liked this repository. Show ❤️ by a 🌟
+### Show ❤️ by a 🌟 to this repository.
