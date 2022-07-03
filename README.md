@@ -1,4 +1,3 @@
-# wordle-javascript
 # What is WORDLE ?
 <img src="https://github.com/Pushpendra766/wordle-javascript/blob/main/img/wordle.jpg" data-canonical-src="https://github.com/RocketChat/Rocket.Chat.Artwork/raw/master/Logos/2020/png/logo-horizontal-red.png" width="500" />
 
