@@ -120,13 +120,21 @@
                 border-color: rgb(161, 161, 161);
                 color: white;
             }
-            @media screen and (max-width: 500) {
+            @media screen and (max-width: 568px) {
                 .button {
                     width: 28px;
                     height: 42px;
-                    padding: 7px;
-                    margin: 2px;
-            }
+                    padding: 3px;
+                    margin: 1px;
+                }
+                .inputBox {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;  
+                }
+                .navbar {
+                    padding: 0 1rem;    
+                }
             }
         </style>
     </head>
@@ -141,7 +149,7 @@
         <div class='message hidden' id='message'>
             <p>This is message</p>
         </div>
-        <div class='infoCard' id="rules">
+        <div class='infoCard hidden' id="rules">
             <p class='crossOuter'><button class='cross' id='closeInfo'>&#9587</button></p>
             <p>Guess the <strong>WORDLE</strong> in six tries.</p>
             <p>Each guess must be a valid five-letter word. Hit the enter button to submit.</p>
